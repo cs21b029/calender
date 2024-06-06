@@ -42,7 +42,9 @@
     gap: 20px;
 }
 
-.part1, .part2, .part3 {
+.part1,
+.part2,
+.part3 {
     flex: 1;
     background-color: #fff;
     border-radius: 8px;
@@ -55,18 +57,21 @@
     align-items: center;
 }
 
-.part2, .part3 {
+.part2,
+.part3 {
     display: flex;
     flex-direction: column;
     position: relative;
     align-items: center;
 }
 
-.part2 .header, .part3 .header {
+.part2 .header,
+.part3 .header {
     margin-bottom: 10px;
 }
 
-.events, .tasks {
+.events,
+.tasks {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -76,16 +81,19 @@
     overflow-y: auto;
 }
 
-.events::-webkit-scrollbar, .tasks::-webkit-scrollbar {
+.events::-webkit-scrollbar,
+.tasks::-webkit-scrollbar {
     width: 8px;
 }
 
-.events::-webkit-scrollbar-thumb, .tasks::-webkit-scrollbar-thumb {
+.events::-webkit-scrollbar-thumb,
+.tasks::-webkit-scrollbar-thumb {
     background-color: #888;
     border-radius: 4px;
 }
 
-.events::-webkit-scrollbar-thumb:hover, .tasks::-webkit-scrollbar-thumb:hover {
+.events::-webkit-scrollbar-thumb:hover,
+.tasks::-webkit-scrollbar-thumb:hover {
     background-color: #555;
 }
 
@@ -96,23 +104,31 @@
         gap: 10px;
     }
 
-    .part1, .part2, .part3 {
+    .part1,
+    .part2,
+    .part3 {
         width: 90%;
     }
 
-    .total{
+    .total {
         height: auto;
     }
 }
 
 @media (max-width: 600px) {
-    .part1, .part2, .part3 {
+
+    .part1,
+    .part2,
+    .part3 {
         width: 90%;
     }
 }
 
 @media (max-width: 420px) {
-    .part1, .part2, .part3 {
+
+    .part1,
+    .part2,
+    .part3 {
         width: 100%;
     }
 
@@ -120,5 +136,5 @@
         font-size: 1.5rem;
     }
 
-    
+
 }

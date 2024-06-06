@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Calender/>} />
+        <Route path="/" element={<Calender />} />
       </Routes>
     </Router>
   );
