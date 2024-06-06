@@ -26,6 +26,10 @@ const Calender = () => {
     const events = useStore((state) => state.getEventByDate(selectedDate?.format('YYYY-MM-DD') || ''));
     const tasks = useStore((state) => state.getTaskByDate(selectedDate?.format('YYYY-MM-DD') || ''));
 
+    const handleDateChange = (date: Dayjs | null) => {
+        setSelectedDate(date);
+    }
+
     const handleTaskClick = (task: { title: string, description: string }) => {
         setSelectedTask(task);
         setTaskDialopOpen(true);
@@ -53,7 +57,7 @@ const Calender = () => {
             <div className='parts'>
                 <div className="part1">
                     <LocalizationProvider dateAdapter={AdapterDayjs}>
-                        <DateCalendar />
+                        <DateCalendar value={selectedDate} onChange={handleDateChange} />
                     </LocalizationProvider>
                 </div>
                 <div className="part2">
