@@ -8,7 +8,8 @@
 }
 
 .header {
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
+    margin-top: 10px !important;
     color: #3f51b5;
     text-align: center;
 }
@@ -38,7 +39,6 @@
     display: flex;
     width: 100%;
     max-width: 1200px;
-    margin-top: 30px;
     gap: 20px;
 }
 
@@ -59,6 +59,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    align-items: center;
 }
 
 .part2 .header, .part3 .header {
