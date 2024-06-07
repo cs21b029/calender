@@ -75,15 +75,64 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
+    align-items: center;
     border-radius: 4px;
-    max-height: 400px;
+    max-height: 200px;
     overflow-y: auto;
+    width: 100%;
+}
+
+.event,
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    width: 80%;
+    transition: background-color 0.3s;
+}
+
+.event .MuiTypography-root,
+.task .MuiTypography-root{
+    flex-grow: 1;
+    font-weight: 500;
+}
+
+.task .MuiTypography-root:hover{
+    cursor: pointer;
+    /* background-color: #888; */
+    color: #3f51b5;
+    /* font-size:large; */
+    font-weight: bold;
+}
+
+.event .MuiSvgIcon-root,
+.task .MuiSvgIcon-root{
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.edit:hover {
+    color: blue;
+}
+
+.delete:hover {
+    color: red;
+}
+
+.MuiSvgIcon-root{
+    border-radius: 10px;
 }
 
 .events::-webkit-scrollbar,
 .tasks::-webkit-scrollbar {
-    width: 8px;
+    width: 4px;
 }
 
 .events::-webkit-scrollbar-thumb,
